@@ -1,0 +1,10 @@
+<changelogs>
+	<changelog>
+		<type>package</type>
+		<element>pkg_cosn</element>
+		<version>0.9.0</version>
+		<note>
+			<item>Alpha releases</item>
+		</note>
+	</changelog>
+</changelogs>

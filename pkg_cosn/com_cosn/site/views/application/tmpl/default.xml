@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Application">
+        <message>Displays cosn application.</message>
+    </layout>
+
+    <fields name="request">
+        <fieldset name="request">
+            <field name="fileid" type="sql" query="SELECT id, title FROM #__cosn" key_field="id" value_field="title" description="COM_COSN_SELECT_APP" label="COM_COSN_SELECT_LABEL" required="true" />
+        </fieldset>
+    </fields>
+</metadata>

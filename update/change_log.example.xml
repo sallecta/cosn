@@ -1,0 +1,102 @@
+urther the changelog is filled with one or more change types. The following change types are supported:
+
+    security: Any security issues that have been fixed
+    fix: Any bugs that have been fixed
+    language: This is for language changes
+    addition: Any new features added
+    change: Any changes
+    remove: Any features removed
+    note: Any extra information to inform the user
+
+Each node can be repeated as many times as needed.
+
+The format of the text can be plain text or HTML but in case of HTML, it must be enclosed in CDATA tags as shown in the example.
+
+<changelogs>
+    <changelog>
+        <element>com_lists</element>
+        <type>component</type>
+        <version>4.0.0</version>
+        <security>
+            <item>Item A</item>
+            <item><![CDATA[<h2>You MUST replace this file</h2>]]></item>
+        </security>
+        <fix>
+            <item>Item A</item>
+            <item>Item b</item>
+        </fix>
+        <language>
+            <item>Item A</item>
+            <item>Item b</item>
+        </language>
+        <addition>
+            <item>Item A</item>
+            <item>Item b</item>
+        </addition>
+        <change>
+            <item>Item A</item>
+            <item>Item b</item>
+        </change>
+        <remove>
+            <item>Item A</item>
+            <item>Item b</item>
+        </remove>
+        <note>
+            <item>Item A</item>
+            <item>Item b</item>
+        </note>
+</changelog>
+<changelog>
+	<element>com_lists</element>
+	<type>component</type>
+	<version>0.0.2</version>
+	<security>
+		<item>Big issue</item>
+	</security>
+</changelog>
+</changelogs>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<changelogs>
+	<changelog>
+		<element>com_lists</element>
+		<type>component</type>
+		<version>4.0.0</version>
+		<security>
+			<item>Item A</item>
+			<item><![CDATA[<h2>You MUST replace this file</h2>]]></item>
+		</security>
+		<fix>
+			<item>Item A</item>
+			<item>Item b</item>
+		</fix>
+		<language>
+			<item>Item A</item>
+			<item>Item b</item>
+		</language>
+		<addition>
+			<item>Item A</item>
+			<item>Item b</item>
+		</addition>
+		<change>
+			<item>Item A</item>
+			<item>Item b</item>
+		</change>
+		<remove>
+			<item>Item A</item>
+			<item>Item b</item>
+		</remove>
+		<note>
+			<item>Item A</item>
+			<item>Item b</item>
+		</note>
+	</changelog>
+	<changelog>
+		<element>com_lists</element>
+		<type>component</type>
+		<version>0.0.2</version>
+		<security>
+			<item>Big issue</item>
+		</security>
+	</changelog>
+</changelogs>

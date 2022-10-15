@@ -1,0 +1,283 @@
+/* From Ribbon */
+:focus {
+	outline: 0;
+}
+/* // Reset */
+h2 {
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+.bubble {
+	clear: both;
+	margin: 0px auto;
+	width: 441px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 90;
+}
+
+.rectangle {
+	background: #7f9db9;
+	height: 50px;
+	width: 470px;
+	position: relative;
+	left: -15px;
+	top: 30px;
+	float: left;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
+	z-index: 100; 
+}
+
+input.cell  {
+	width: 38px;
+	height: 36px;
+	font-size: 24px;
+	text-align: center;
+	padding: 0px;
+	border: 0px;
+}
+
+input[type="text"].cell {
+	width: 38px;
+	height: 36px;
+	font-size: 24px;
+	text-align: center;
+	padding: 0px;
+	border: 0px;
+}
+
+input.sudoku-nonumber {
+	background: #fafafa;	
+}
+
+.sudoku-nonumber {
+	background: #fafafa;	
+}
+
+input[type="text"].sudoku-number {
+	color: #555555;
+	background: #cccccc;	
+}
+
+.sudoku-number {
+	color: #555555;
+	background: #cccccc;	
+}
+
+.rectangle h2 {
+	font-size: 24px;
+	color: #fff;
+	margin-top: 9px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.triangle-l {
+	border-color: transparent #7d90a3 transparent transparent;
+	border-style: solid;
+	border-width: 15px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	left: -30px;
+	top: 65px;
+	z-index: -1; /* displayed under bubble */
+}
+
+.triangle-r {
+	border-color: transparent transparent transparent #7d90a3;
+	border-style: solid;
+	border-width: 15px;
+	height: 0px;
+	width: 0px;
+	position: relative;
+	left: 441px;
+	top: 35px;
+	z-index: -1; /* displayed under bubble */
+}
+
+.sudoku-container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.35;
+	font-style: normal;
+	text-align: left;
+	color: #333;
+	padding: 10px 7px 0px;
+	margin: auto;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sudoku-info {
+	padding: 35px 0px 35px 0px;
+}
+
+.sudoku-info h2 {
+	font-size: 20px;
+}
+
+.sudoku-info p {
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.sudoku-info p a {
+	color: #c4591e;
+	text-decoration: none;
+}
+
+.sudoku-messages {
+   margin-top: 10px;
+   font-size: 12px;
+   font-weight: bold;
+   color: #007C29;
+   text-align: center;
+   visibility: hidden;
+   margin-bottom: -15px;
+}
+
+.sudoku-info p a:hover {
+	text-decoration: underline;
+}
+/* php sudoku */
+table.sudoku {
+	border-bottom: 1px solid #999999;
+	border-right: 1px solid #999999;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+td.cell {
+	width: 36px;
+	height: 36px;
+	border-top: 1px solid #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	padding: 0px;
+}
+
+td.cell-right {
+	border-right: 2px solid #888888;
+}
+
+td.cell-bottom {
+	border-bottom: 2px solid #888888;
+}
+
+td.cell-both {
+	border-right: 2px solid #888888;
+	border-bottom: 2px solid #888888;
+}
+
+a.sudoku {
+	font-size: 12px;
+	color: #000000;
+}
+
+a.sudokumin {
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.sudoku-form {
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #555;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+h1.sudoku {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#sudoku {
+	background: #FFFFFF;
+	width: 441px;
+}
+
+.sudokubutton {
+	background-color: #7d90a3;
+	box-shadow: 2px 2px 2px 2px #a0a0a0;
+	color: #fff;
+	border-radius: 5px;
+	text-indent: 0;
+	border: 1px solid #909090;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: normal;
+	font-variant: small-caps;
+	height: 25px;
+	line-height: 20px;
+	text-decoration: none;
+	text-align: center;
+	margin: 5px 5px 0 0px;
+	cursor: pointer;
+}
+
+.sudokubutton:disabled {
+	background-color: #e9e9e9;
+	cursor: wait;
+	color: #555;
+}
+
+.sudokubutton:hover {
+	background: linear-gradient(center top, #e9e9e9 5%, #f9f9f9 100%);
+	background-color: #e9e9e9;
+	color: #444;
+}
+
+.sudokubutton:active {
+	position: relative;
+	top: 1px;
+}
+
+.actions {
+	height: 28px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	vertical-align: bottom;
+}
+
+input {
+	white-space: nowrap;
+}
+
+a#info {
+	position: relative;
+	top: 3px;
+	margin-left: 230px;
+}
+
+.overlay {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	position: relative;
+	padding-left: 1px;
+	height: 0px;
+	line-height: 90%;
+	top: 3px;
+	left: 2px; 
+	display: block;
+	visibility: hidden;
+	width: 32px; 
+	box-sizing: initial;
+}

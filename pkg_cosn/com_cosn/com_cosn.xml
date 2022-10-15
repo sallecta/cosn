@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_cosn</name>
+	<creationDate>October 2022</creationDate>
+	<copyright>2022 Alexander Gribkov, Joachim Schmidt</copyright>
+	<license>GNU General Public License Version 2 oder später; siehe LICENSE.txt</license>
+	<author>Alexander Gribkov, Joachim Schmidt</author>
+	<authorEmail>sallecta@yahoo.com</authorEmail>
+	<authorUrl>https://github.com/sallecta/cosn</authorUrl>
+	<version>0.9.0</version>
+	<description>COM_COSN_DESCRIPTION</description>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>cosn.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>demo</folder>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/com_cosn.ini</language>
+	</languages>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8" folder="admin">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<media destination="com_cosn" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</media>
+	<administration>
+		<menu>COM_COSN_MENU</menu>
+		<submenu>
+			<menu link="option=com_cosn&amp;view=cosn_codes">COM_COSN_MENU_APPS</menu>
+			<menu link="option=com_cosn&amp;view=about">COM_COSN_MENU_ABOUT</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>cosn.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/com_cosn.ini</language>
+			<language tag="en-GB">en-GB/com_cosn.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
