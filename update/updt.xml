@@ -2,7 +2,7 @@
 <updates>
 	<update>
 		<name>Cosn package</name>
-		<description><p>Cosn package to manage and run custom code (stored in a file or retrieved from a database) into any Joomla! content.</p><p>See details in <a href='index.php?option=com_cosn&view=about'>Sidebar Menu -> Components -> Cosn -> About</a>.</p></description>
+		<description>Cosn package to manage and run custom code (stored in a file or retrieved from a database) into any Joomla! content.</description>
 		<element>pkg_cosn</element>
 		<type>package</type>
 		<client>administrator</client>
