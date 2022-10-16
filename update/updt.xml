@@ -2,7 +2,7 @@
 <updates>
 	<update>
 		<name>Cosn package</name>
-		<description>Cosn package to manage and run custom code.</description>
+		<description>Cosn package to manage and run custom code</description>
 		<element>pkg_cosn</element>
 		<type>package</type>
 		<client>administrator</client>
@@ -14,6 +14,6 @@
 		<tags>
 			<tag>stable</tag>
 		</tags>
-		<targetPlatform name="joomla" version="4" />
+		<targetPlatform name="joomla" version="4"/>
 	</update>
 </updates>
