@@ -2,6 +2,15 @@
 	<changelog>
 		<type>package</type>
 		<element>pkg_cosn</element>
+		<version>0.9.3</version>
+		<note>
+			<item>pkg_cosn: remove 'No checksum found on the update server' warning;</item>
+			<item>...</item>
+		</note>
+	</changelog>
+	<changelog>
+		<type>package</type>
+		<element>pkg_cosn</element>
 		<version>0.9.2</version>
 		<note>
 			<item>pkg_cosn: add system name to subextensions name;</item>
