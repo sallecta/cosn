@@ -7,7 +7,8 @@
 	<license>http://www.gnu.org/licenses/#GPL</license>
 	<authorEmail>sallecta@yahoo.com</authorEmail>
 	<authorUrl>https://github.com/sallecta/cosn</authorUrl>
-	<version>0.9.0.0</version>
+	<!-- version here is allways 0, actual version in package xml file -->
+	<version>0.0.0</version>
 	<description>PLG_COSN_DESCRIPTION</description>
 	<files>
 		<filename plugin="cosn">plg_cosn.php</filename>

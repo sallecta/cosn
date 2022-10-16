@@ -15,7 +15,7 @@ class CosnController extends \Joomla\CMS\MVC\Controller\BaseController
 
     public function display ($cachable = false, $urlparams = false)
     {
-        $view = Factory::getApplication()->input->getCmd('view', 'cosn_codes');
+        $view = Factory::getApplication()->input->getCmd('view', 'apps');
         Factory::getApplication()->input->set('view', $view);
 
         parent::display($cachable, $urlparams);

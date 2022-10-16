@@ -15,7 +15,7 @@ use \Joomla\CMS\Session\session;
 use \Joomla\CMS\Factory;
 use \Joomla\CMS\Language\Text;
 
-class CosnControllerCosn_codes extends \Joomla\CMS\MVC\Controller\AdminController
+class CosnControllerApps extends \Joomla\CMS\MVC\Controller\AdminController
 {
 	
 	public function duplicate()
@@ -43,7 +43,7 @@ class CosnControllerCosn_codes extends \Joomla\CMS\MVC\Controller\AdminControlle
 			Factory::getApplication()->enqueueMessage($e->getMessage(), 'warning');
 		}
 
-		$this->setRedirect('index.php?option=com_cosn&view=cosn_codes');
+		$this->setRedirect('index.php?option=com_cosn&view=apps');
 	}
 
 	public function getModel($name = 'cosn_code', $prefix = 'CosnModel', $config = array())

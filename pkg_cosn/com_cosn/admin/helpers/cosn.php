@@ -38,8 +38,8 @@ class CosnHelper
 	{
 		JHtmlSidebar::addEntry(
 			Text::_('COM_COSN_ADM_TITLE_APPS'),
-			'index.php?option=com_cosn&view=cosn_codes',
-			$vName == 'cosn_codes'
+			'index.php?option=com_cosn&view=apps',
+			$vName == 'apps'
 		);
 
 	}

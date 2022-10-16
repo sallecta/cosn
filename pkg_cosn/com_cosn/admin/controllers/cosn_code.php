@@ -19,7 +19,7 @@ class CosnControllerCosn_code extends \Joomla\CMS\MVC\Controller\FormController
 	 */
 	public function __construct()
 	{
-		$this->view_list = 'cosn_codes';
+		$this->view_list = 'apps';
 		parent::__construct();
 	}
 }

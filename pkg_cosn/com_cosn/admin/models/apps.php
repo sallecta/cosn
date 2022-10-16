@@ -19,7 +19,7 @@ if (version_compare($joomla_version->getShortVersion(), '4.0', '>='))
 else
     JLoader::register('FieldsHelper', JPATH_ADMINISTRATOR . '/components/com_fields/helpers/fields.php');
 
-class CosnModelCosn_codes extends \Joomla\CMS\MVC\Model\ListModel
+class CosnModelApps extends \Joomla\CMS\MVC\Model\ListModel
 {
 
     public function __construct ($config = array())

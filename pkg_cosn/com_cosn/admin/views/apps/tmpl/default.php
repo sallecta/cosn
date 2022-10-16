@@ -54,14 +54,14 @@ $saveOrder = $listOrder == 'a.ordering';
 
 if ($saveOrder)
 {
-	$saveOrderingUrl = 'index.php?option=com_cosn&task=cosn_codes.saveOrderAjax&tmpl=component';
+	$saveOrderingUrl = 'index.php?option=com_cosn&task=apps.saveOrderAjax&tmpl=component';
     HTMLHelper::_('sortablelist.sortable', 'cosn_codeList', 'adminForm', strtolower($listDirn), $saveOrderingUrl);
 }
 
 $sortFields = $this->getSortFields();
 ?>
 
-<form action="<?php echo Route::_('index.php?option=com_cosn&view=cosn_codes'); ?>" method="post"
+<form action="<?php echo Route::_('index.php?option=com_cosn&view=apps'); ?>" method="post"
 	  name="adminForm" id="adminForm">
 	<?php if (!empty($this->sidebar)): ?>
 	<div id="j-sidebar-container" class="span2">
@@ -157,7 +157,7 @@ $sortFields = $this->getSortFields();
 						</td>
 						<td>
 							<?php if (isset($item->checked_out) && $item->checked_out && ($canEdit || $canChange)) : ?>
-								<?php echo HTMLHelper::_('jgrid.checkedout', $i, $item->uEditor, $item->checked_out_time, 'cosn_codes.', $canCheckin); ?>
+								<?php echo HTMLHelper::_('jgrid.checkedout', $i, $item->uEditor, $item->checked_out_time, 'apps.', $canCheckin); ?>
 							<?php endif; ?>
 							<?php if ($canEdit) : ?>
 								<a href="<?php echo Route::_('index.php?option=com_cosn&task=cosn_code.edit&id='.(int) $item->id); ?>">
@@ -190,7 +190,7 @@ $sortFields = $this->getSortFields();
 <script>
 Joomla.submitbutton = function (task) {
 
-	if (task == 'cosn_codes.delete') {
+	if (task == 'apps.delete') {
   
 	  var title = '<?php echo $this->escape(Text::_('COM_COSN_ADM_CONFIRM')); ?>';
       var content = '<?php echo Text::_('COM_COSN_ADM_CONFIRM_DELETE'); ?>';
