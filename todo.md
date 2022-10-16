@@ -1,7 +1,7 @@
 # Version 0.9.1
 
 ## make_package.sh:
-- remove package zip file if exist 
++ remove package zip file if exist 
 
 ## pkg_cosn, releases, update:
 - online update 

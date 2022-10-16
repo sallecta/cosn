@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<updates>
+	<update>
+		<name>jphpx</name>
+		<description>jphpx Package</description>
+		<element>pkg_jphpx</element>
+		<type>package</type>
+		<client>administrator</client>
+		<version>1.3.3.0</version>
+		<infourl title="com_jphpx">https://www.jschmidt-systemberatung.de/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://www.jschmidt-systemberatung.de/downloads/pkg_jphpx-v1.3.3.zip</downloadurl>
+		</downloads>
+		<sha256>df7bf6df145e310e26e18aa74b18de0b346967ad75e7aac7334068107ba8bbca</sha256>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+	    <targetplatform name="joomla" version="3.(9|10)"/>
+	</update>
+		<update>
+		<name>jphpx</name>
+		<description>jphpx package</description>
+		<element>pkg_jphpx</element>
+		<type>package</type>
+		<client>administrator</client>
+		<version>1.3.3.0</version>
+		<infourl title="com_jphpx">https://www.jschmidt-systemberatung.de/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://www.jschmidt-systemberatung.de/downloads/pkg_jphpx-v1.3.3.zip</downloadurl>
+		</downloads>
+		<sha256>df7bf6df145e310e26e18aa74b18de0b346967ad75e7aac7334068107ba8bbca</sha256>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+	    <targetplatform name="joomla" version="4.[012]"/>
+	</update>
+</updates>

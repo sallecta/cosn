@@ -3,9 +3,9 @@
 	<update>
 		<name>Cosn package</name>
 		<description><p>Cosn package to manage and run custom code (stored in a file or retrieved from a database) into any Joomla! content.</p><p>See details in <a href='index.php?option=com_cosn&view=about'>Sidebar Menu -> Components -> Cosn -> About</a>.</p></description>
-		<type>package</type>
 		<element>pkg_cosn</element>
-		<client>site</client>
+		<type>package</type>
+		<client>administrator</client>
 		<version>0.9.0</version>
 		<infourl title="Cosn package">https://htmlpreview.github.io/?https://github.com/sallecta/cosn/blob/main/releases/pkg_cosn_0.9.0.html</infourl>
 		<downloads>

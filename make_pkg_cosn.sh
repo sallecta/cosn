@@ -31,6 +31,10 @@ fi
 
 file_distr="pkg_""$settigs_app_name""_$version.zip"
 
+if [ -f "$dir_distr/$file_distr" ]; then
+	rm "$dir_distr/$file_distr"
+fi
+
 echo "package $settigs_app_name version $version"
 
 cd "$dir_src/$dir_plg"
