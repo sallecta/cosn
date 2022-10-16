@@ -42,7 +42,7 @@ class plgSystemCosn extends CMSPlugin
         if (empty($id) || ! is_numeric($id))
             return false;
 
-        if ($pluginParams->secure_parm == 1 || $input->get('secure_parm') == '1')
+        if ($pluginParams->secure_xhr == 1 || $input->get('secure_xhr') == '1')
         {
             foreach ($_GET as $key => $value)
             {
@@ -81,7 +81,7 @@ class plgSystemCosn extends CMSPlugin
         $result = $this->database->loadRow();
         if (empty($result[0]))
         {
-            echo "<div style='color:red;'>&nbsp;" . Text::sprintf('PLG_ERROR_RECORD_URL', $id) . "</div>";
+            echo "<div style='color:red;'>&nbsp;" . Text::sprintf('PLG_COSN_ERR_RECORD_URL', $id) . "</div>";
             return false;
         }
 
@@ -90,7 +90,7 @@ class plgSystemCosn extends CMSPlugin
             require_once $file;
         else
         {
-            echo "<div style='color:red;'>&nbsp;" . Text::sprintf('PLG_ERROR_FILE', $file) . "</div>";
+            echo "<div style='color:red;'>&nbsp;" . Text::sprintf('PLG_COSN_ERR_FILE', $file) . "</div>";
             return false;
         }
     }
@@ -150,12 +150,12 @@ class plgSystemCosn extends CMSPlugin
                     }
 
                     // Following syntax {cosn [storage_source][arg1]...[argN]}
-                    $storage_source = $this->getStorageSource(trim(array_shift($cosn)), $pluginParams->default_path_prefix);
+                    $storage_source = $this->getStorageSource(trim(array_shift($cosn)), $pluginParams->path_prefix);
                     $output = '';
 
                     if ($storage_source == '')
                     { // if nothing to show
-                        $output = '<div style="color:red;">&nbsp:' . Text::_('PLG_ERROR_CONTENT') . '</div>';
+                        $output = '<div style="color:red;">&nbsp:' . Text::_('PLG_COSN_ERR_CONTENT') . '</div>';
                     }
                     else
                     { // buffer output
@@ -169,14 +169,14 @@ class plgSystemCosn extends CMSPlugin
                             }
                             else
                             {
-                                $output = '<div style="color:red;">&nbsp;' . Text::sprintf('PLG_ERROR_RECORD', $storage_source) . '</div>';
+                                $output = '<div style="color:red;">&nbsp;' . Text::sprintf('PLG_COSN_ERR_RECORD', $storage_source) . '</div>';
                             }
                         }
                         else
                         { // it is file
-                            if ($pluginParams->hide_code == 1)
+                            if ($pluginParams->apps_from_db_only == 1)
                             {
-                                $output = '<div style="color:red;">&nbsp;' . Text::sprintf('PLG_ERROR_DBONLY', $storage_source) . '</div>';
+                                $output = '<div style="color:red;">&nbsp;' . Text::sprintf('PLG_COSN_ERR_DBONLY', $storage_source) . '</div>';
                                 // return true;
                             }
                             elseif (is_readable($storage_source))
@@ -186,7 +186,7 @@ class plgSystemCosn extends CMSPlugin
                             else
                             {
                                 echo "</br> heyy";
-                                $output = '<div style="color:red;">&nbsp;' . Text::sprintf('PLG_ERROR_FILE', $storage_source) . '</div>';
+                                $output = '<div style="color:red;">&nbsp;' . Text::sprintf('PLG_COSN_ERR_FILE', $storage_source) . '</div>';
                             }
                         }
                         if ($output == '')

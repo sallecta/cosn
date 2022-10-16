@@ -7,7 +7,7 @@
 	<license>http://www.gnu.org/licenses/#GPL</license>
 	<authorEmail>sallecta@yahoo.com</authorEmail>
 	<authorUrl>https://github.com/sallecta/cosn</authorUrl>
-	<!-- version here is allways 0, actual version in package xml file -->
+	<!-- version here is allways 0, actual version set in package xml file -->
 	<version>0.0.0</version>
 	<description>PLG_COSN_DESCRIPTION</description>
 	<files>
@@ -18,18 +18,18 @@
 		<language tag="en-GB">en-GB/plg_system_cosn.ini</language>
 		<language tag="en-GB">en-GB/plg_system_cosn.sys.ini</language>
 	</languages>
-	<scriptfile>plg_cosn_install_script.php</scriptfile>
+	<scriptfile>install_script.php</scriptfile>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="default_path_prefix" type="text" size="80" default="" label="PARAM_PATHPREFIX_LABEL" description="PARAM_PATHPREFIX_DESC" />
-				<field name="hide_code" type="radio" default="0" label="PARAM_HIDECODE_LABEL" description="PARAM_HIDECODE_DESC">
-					<option value="0">NO_NO</option>
-					<option value="1">YES_YES</option>
+				<field name="path_prefix" type="text" size="80" default="" label="PLG_COSN_PATHPREFIX_LABEL" description="PLG_COSN_PATHPREFIX_DESC" />
+				<field name="apps_from_db_only" type="radio" default="0" label="PLG_COSN_APPSFROMDBONLY_LABEL" description="PLG_COSN_APPSFROMDBONLY_DESC">
+					<option value="0">PLG_COSN_NO</option>
+					<option value="1">PLG_COSN_YES</option>
 				</field>
-				<field name="secure_parm" type="radio" default="1" label="PARAM_SECURE_PARM_LABEL" description="PARAM_SECURE_PARM_DESC">
-					<option value="0">NO_NO</option>
-					<option value="1">YES_YES</option>
+				<field name="secure_xhr" type="radio" default="1" label="PLG_COSN_SECUREXHR_LABEL" description="PLG_COSN_SECUREXHR_DESC">
+					<option value="0">PLG_COSN_NO</option>
+					<option value="1">PLG_COSN_YES</option>
 				</field>
 			</fieldset>
 		</fields>

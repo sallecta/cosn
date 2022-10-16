@@ -7,7 +7,7 @@
 	<author>Alexander Gribkov, Joachim Schmidt</author>
 	<authorEmail>sallecta@yahoo.com</authorEmail>
 	<authorUrl>https://github.com/sallecta/cosn</authorUrl>
-	<!-- version here is allways 0, actual version in package xml file -->
+	<!-- version here is allways 0, actual version set in package xml file -->
 	<version>0.0.0</version>
 	<description>COM_COSN_DESCRIPTION</description>
 	<files folder="site">

@@ -29,13 +29,13 @@ if [ ! -d "$dir_distr" ]; then
 	fn_stoponerror $? $LINENO
 fi
 
-file_distr="pkg_""$settigs_app_name""_$version.zip"
+file_distr="pkg_""$settigs_app_name""_$version.ignore.zip"
 
 if [ -f "$dir_distr/$file_distr" ]; then
 	rm "$dir_distr/$file_distr"
 fi
 
-echo "package $settigs_app_name version $version"
+echo "Creating $file_distr"
 
 cd "$dir_src/$dir_plg"
 fn_stoponerror $? $LINENO
@@ -45,7 +45,7 @@ fn_stoponerror $? $LINENO
 
 cd "$dir_distr"
 fn_stoponerror $? $LINENO
-zip -m  "$dir_distr/$file_distr" "$dir_plg"".zip"
+zip -mq  "$dir_distr/$file_distr" "$dir_plg"".zip"
 fn_stoponerror $? $LINENO
 
 cd "$dir_src/$dir_com"

@@ -7,7 +7,7 @@
     <copyright>2022 Alexander Gribkov, Joachim Schmidt</copyright>
 	<creationDate>October 2022</creationDate>
 	<packagename>cosn</packagename>
-	<version>0.9.1</version>
+	<version>0.9.2</version>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<url>https://github.com/sallecta/cosn/</url>
 	<packager>Alexander Gribkov</packager>
