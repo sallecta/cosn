@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extensionset name="CosnPackage" description="Cosn package">
 	<!-- extension name="Any" element="as in extensions table" type="package" version="as in latest in updt.xml" detailsurl="https://...update/updt.xml" -->
-	<extension name="emm" element="pkg_cosn" type="package" version="0.9.1" detailsurl="https://raw.githubusercontent.com/sallecta/cosn/main/update/updt.xml"/>
+	<extension name="Cosn" element="pkg_cosn" type="package" version="0.9.1" detailsurl="https://raw.githubusercontent.com/sallecta/cosn/main/update/updt.xml"/>
 </extensionset>
