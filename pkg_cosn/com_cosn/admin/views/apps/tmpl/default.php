@@ -55,7 +55,7 @@ $saveOrder = $listOrder == 'a.ordering';
 if ($saveOrder)
 {
 	$saveOrderingUrl = 'index.php?option=com_cosn&task=apps.saveOrderAjax&tmpl=component';
-    HTMLHelper::_('sortablelist.sortable', 'cosn_codeList', 'adminForm', strtolower($listDirn), $saveOrderingUrl);
+    HTMLHelper::_('sortablelist.sortable', 'appList', 'adminForm', strtolower($listDirn), $saveOrderingUrl);
 }
 
 $sortFields = $this->getSortFields();
@@ -75,7 +75,7 @@ $sortFields = $this->getSortFields();
 			<?php echo LayoutHelper::render('joomla.searchtools.default', array('view' => $this)); ?>
 
 			<div class="clearfix"></div>
-			<table class="table table-striped" id="cosn_codeList">
+			<table class="table table-striped" id="appList">
 				<thead>
 				<tr>
 					<?php if (isset($this->items[0]->ordering)): ?>
@@ -160,7 +160,7 @@ $sortFields = $this->getSortFields();
 								<?php echo HTMLHelper::_('jgrid.checkedout', $i, $item->uEditor, $item->checked_out_time, 'apps.', $canCheckin); ?>
 							<?php endif; ?>
 							<?php if ($canEdit) : ?>
-								<a href="<?php echo Route::_('index.php?option=com_cosn&task=cosn_code.edit&id='.(int) $item->id); ?>">
+								<a href="<?php echo Route::_('index.php?option=com_cosn&task=app.edit&id='.(int) $item->id); ?>">
 								<?php echo $this->escape($item->title); ?></a>
 							<?php else : ?>
 								<?php echo $this->escape($item->title); ?>

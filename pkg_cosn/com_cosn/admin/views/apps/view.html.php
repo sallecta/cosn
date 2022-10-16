@@ -53,13 +53,13 @@ class CosnViewApps extends \Joomla\CMS\MVC\View\HtmlView
         ToolbarHelper::title(Text::_('COM_COSN_ADM_TITLE_APPS'), 'apps.png');
 
         // Check if the form exists before showing the add/edit buttons
-        $formPath = JPATH_COMPONENT_ADMINISTRATOR . '/views/cosn_code';
+        $formPath = JPATH_COMPONENT_ADMINISTRATOR . '/views/app';
 
         if (file_exists($formPath))
         {
             if ($canDo->get('core.create'))
             {
-                ToolbarHelper::addNew('cosn_code.add', 'JTOOLBAR_NEW');
+                ToolbarHelper::addNew('app.add', 'JTOOLBAR_NEW');
 
                 if (isset($this->items[0]))
                 {
@@ -69,7 +69,7 @@ class CosnViewApps extends \Joomla\CMS\MVC\View\HtmlView
 
             if ($canDo->get('core.edit') && isset($this->items[0]))
             {
-                ToolbarHelper::editList('cosn_code.edit', 'JTOOLBAR_EDIT');
+                ToolbarHelper::editList('app.edit', 'JTOOLBAR_EDIT');
             }
         }
 

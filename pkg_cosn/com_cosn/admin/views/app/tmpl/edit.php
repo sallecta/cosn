@@ -41,7 +41,7 @@ else
 {
   HTMLHelper::_('behavior.formvalidator');
   $wa = Factory::getApplication()->getDocument()->getWebAssetManager();
-  $wa->registerAndUseStyle("cosn_code", $css);
+  $wa->registerAndUseStyle("app", $css);
   $wa->registerAndUseStyle("confirm_css", $confirm_css);
   $wa->registerAndUseScript("confirm_js", $confirm_js);
 }
@@ -55,8 +55,8 @@ else
 	});
 
 	Joomla.submitbutton = function (task) {
-		if (task == 'cosn_code.cancel') {
-			Joomla.submitform(task, document.getElementById('cosn_code-form'));
+		if (task == 'app.cancel') {
+			Joomla.submitform(task, document.getElementById('app-form'));
 		}
 		else {
 
@@ -75,9 +75,9 @@ else
                return false;
             }
 			
-			if (task != 'cosn_code.cancel' && document.formvalidator.isValid(document.getElementById('cosn_code-form'))) {
+			if (task != 'app.cancel' && document.formvalidator.isValid(document.getElementById('app-form'))) {
 				
-				Joomla.submitform(task, document.getElementById('cosn_code-form'));
+				Joomla.submitform(task, document.getElementById('app-form'));
 			}
 			else {
                  jQuery.alert({ title: title, type: 'red', theme: 'light', content: '<?php echo $this->escape(Text::_('JGLOBAL_VALIDATION_FORM_FAILED')); ?>'});
@@ -88,11 +88,11 @@ else
 
 <form
 	action="<?php echo Route::_('index.php?option=com_cosn&layout=edit&id=' . (int) $this->item->id); ?>"
-	method="post" enctype="multipart/form-data" name="adminForm" id="cosn_code-form" class="form-validate form-horizontal">
+	method="post" enctype="multipart/form-data" name="adminForm" id="app-form" class="form-validate form-horizontal">
 
 	
-	<?php echo HTMLHelper::_('bootstrap.startTabSet', 'myTab', array('active' => 'cosn_code')); ?>
-	<?php echo HTMLHelper::_('bootstrap.addTab', 'myTab', 'cosn_code', Text::_('COM_COSN_ADM_TAB_APP', true)); ?>
+	<?php echo HTMLHelper::_('bootstrap.startTabSet', 'myTab', array('active' => 'app')); ?>
+	<?php echo HTMLHelper::_('bootstrap.addTab', 'myTab', 'app', Text::_('COM_COSN_ADM_TAB_APP', true)); ?>
 	<div class="row-fluid">
 		<div class="span10 form-horizontal">
 			<fieldset class="adminform">

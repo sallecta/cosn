@@ -15,7 +15,7 @@ use \Joomla\Registry\Registry;
 use \Joomla\CMS\Access\Access;
 use \Joomla\CMS\Table\Table as Table;
 
-class CosnTablecosn_code extends Table
+class CosnTableapp extends Table
 {
 
     public function __construct (&$db)
@@ -59,10 +59,10 @@ class CosnTablecosn_code extends Table
             $array['metadata'] = (string) $registry;
         }
 
-        if (! $user->authorise('core.admin', 'com_cosn.cosn_code.' . $array['id']))
+        if (! $user->authorise('core.admin', 'com_cosn.app.' . $array['id']))
         {
-            $actions = Access::getActionsFromFile(JPATH_ADMINISTRATOR . '/components/com_cosn/access.xml', "/access/section[@name='cosn_code']/");
-            $default_actions = Access::getAssetRules('com_cosn.cosn_code.' . $array['id'])->getData();
+            $actions = Access::getActionsFromFile(JPATH_ADMINISTRATOR . '/components/com_cosn/access.xml', "/access/section[@name='app']/");
+            $default_actions = Access::getAssetRules('com_cosn.app.' . $array['id'])->getData();
             $array_jaccess = array();
 
             foreach ($actions as $action)
@@ -123,7 +123,7 @@ class CosnTablecosn_code extends Table
     {
         $k = $this->_tbl_key;
 
-        return 'com_cosn.cosn_code.' . (int) $this->$k;
+        return 'com_cosn.app.' . (int) $this->$k;
     }
 
     protected function _getAssetParentId (Table $table = null, $id = null)

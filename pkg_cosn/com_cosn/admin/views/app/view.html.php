@@ -16,7 +16,7 @@ use \Joomla\CMS\Version;
 use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\Toolbar\ToolbarHelper;
 
-class CosnViewCosn_code extends \Joomla\CMS\MVC\View\HtmlView
+class CosnViewApp extends \Joomla\CMS\MVC\View\HtmlView
 {
     protected $state;
 
@@ -63,33 +63,33 @@ class CosnViewCosn_code extends \Joomla\CMS\MVC\View\HtmlView
 
         $canDo = CosnHelper::getActions();
 
-        ToolBarHelper::title(Text::_('COM_COSN_ADM_TITLE_APP'), 'cosn_code.png');
+        ToolBarHelper::title(Text::_('COM_COSN_ADM_TITLE_APP'), 'app.png');
 
         // If not checked out, can save the item.
         if (! $checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
         {
-            ToolBarHelper::apply('cosn_code.apply', 'JTOOLBAR_APPLY');
-            ToolBarHelper::save('cosn_code.save', 'JTOOLBAR_SAVE');
+            ToolBarHelper::apply('app.apply', 'JTOOLBAR_APPLY');
+            ToolBarHelper::save('app.save', 'JTOOLBAR_SAVE');
         }
 
         if (! $checkedOut && ($canDo->get('core.create')))
         {
-            ToolBarHelper::custom('cosn_code.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
+            ToolBarHelper::custom('app.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
         }
 
         // If an existing item, can save to a copy.
         if (! $isNew && $canDo->get('core.create'))
         {
-            ToolBarHelper::custom('cosn_code.save2copy', 'save-copy.png', 'save-copy_f2.png', 'JTOOLBAR_SAVE_AS_COPY', false);
+            ToolBarHelper::custom('app.save2copy', 'save-copy.png', 'save-copy_f2.png', 'JTOOLBAR_SAVE_AS_COPY', false);
         }
 
         if (empty($this->item->id))
         {
-            ToolBarHelper::cancel('cosn_code.cancel', 'JTOOLBAR_CANCEL');
+            ToolBarHelper::cancel('app.cancel', 'JTOOLBAR_CANCEL');
         }
         else
         {
-            ToolBarHelper::cancel('cosn_code.cancel', 'JTOOLBAR_CLOSE');
+            ToolBarHelper::cancel('app.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

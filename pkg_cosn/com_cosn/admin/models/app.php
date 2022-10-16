@@ -24,16 +24,16 @@ use \Joomla\CMS\Language\Associations;
  *
  * @since  1.6
  */
-class CosnModelCosn_code extends \Joomla\CMS\MVC\Model\AdminModel
+class CosnModelApp extends \Joomla\CMS\MVC\Model\AdminModel
 {
 
     protected $text_prefix = 'COM_COSN';
 
-    public $typeAlias = 'com_cosn.cosn_code';
+    public $typeAlias = 'com_cosn.app';
 
     protected $item = null;
 
-    public function getTable ($type = 'Cosn_code', $prefix = 'CosnTable', $config = array())
+    public function getTable ($type = 'App', $prefix = 'CosnTable', $config = array())
     {
         return Table::getInstance($type, $prefix, $config);
     }
@@ -41,7 +41,7 @@ class CosnModelCosn_code extends \Joomla\CMS\MVC\Model\AdminModel
     public function getForm ($data = array(), $loadData = true)
     {
         // Get the form.
-        $form = $this->loadForm('com_cosn.cosn_code', 'cosn_code', array(
+        $form = $this->loadForm('com_cosn.app', 'app', array(
                 'control' => 'jform',
                 'load_data' => $loadData
         ));
@@ -310,7 +310,7 @@ class CosnModelCosn_code extends \Joomla\CMS\MVC\Model\AdminModel
     protected function loadFormData ()
     {
         // Check the session for previously entered form data.
-        $data = Factory::getApplication()->getUserState('com_cosn.edit.cosn_code.data', array());
+        $data = Factory::getApplication()->getUserState('com_cosn.edit.app.data', array());
 
         if (empty($data))
         {

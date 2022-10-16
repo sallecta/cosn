@@ -46,7 +46,7 @@ class CosnControllerApps extends \Joomla\CMS\MVC\Controller\AdminController
 		$this->setRedirect('index.php?option=com_cosn&view=apps');
 	}
 
-	public function getModel($name = 'cosn_code', $prefix = 'CosnModel', $config = array())
+	public function getModel($name = 'app', $prefix = 'CosnModel', $config = array())
 	{
 		$model = parent::getModel($name, $prefix, array('ignore_request' => true));
 

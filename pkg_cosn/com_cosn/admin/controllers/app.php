@@ -10,7 +10,7 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.controllerform');
 
-class CosnControllerCosn_code extends \Joomla\CMS\MVC\Controller\FormController
+class CosnControllerApp extends \Joomla\CMS\MVC\Controller\FormController
 {
 	/**
 	 * Constructor
