@@ -3,7 +3,7 @@
 	<update>
 		<name>Cosn package</name>
 		<description>Cosn package to manage and run custom code</description>
-		<element>cosn</element>
+		<element>pkg_cosn</element>
 		<type>package</type>
 		<client>administrator</client>
 		<version>0.9.1</version>
