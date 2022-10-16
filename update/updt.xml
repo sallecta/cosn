@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <updates>
 	<update>
-		<name>Cosn package</name>
+		<name>Cosn</name>
 		<description>Cosn package to manage and run custom code</description>
 		<element>pkg_cosn</element>
 		<type>package</type>
