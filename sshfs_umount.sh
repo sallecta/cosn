@@ -24,5 +24,5 @@ fn_stoponerror $? $LINENO
 umount $settigsignore2_local_dir_mount
 fn_stoponerror $? $LINENO
 
-rm -f $settigsignore2_local_dir_mount
+rm -r $settigsignore2_local_dir_mount
 fn_stoponerror $? $LINENO
