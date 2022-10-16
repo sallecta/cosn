@@ -24,4 +24,5 @@
 		<file type="plugin" id="cosn" group="system">plg_cosn.zip</file>
 		<file type="component" id="com_cosn">com_cosn.zip</file>
 	</files>
+	<blockChildUninstall>true</blockChildUninstall>
 </extension>
