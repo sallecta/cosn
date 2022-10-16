@@ -7,7 +7,7 @@
 			<item>pkg_cosn: add system name to subextensions name;</item>
 			<item>plg_cosn: review language strings</item>
 			<item>make_pkg_cosn.sh: remove 'adding: plg_cosn.zip (stored 0%)' message</item>
-			<item>make_pkg_cosn.sh: add 'ignore' word to generated pkg zip file</item>
+			<item>make_pkg_cosn.sh, gitignore: ignore newly generated pkg zip file in git and update system</item>
 		</note>
 	</changelog>
 	<changelog>
